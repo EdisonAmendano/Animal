@@ -41,5 +41,9 @@ public class Pez extends  Animal implements Acciones{
     public void reproducirese() {
         System.out.println("El pez "+ this.getNombre()+" se esta reproducionedo");
     }
-    
+    @Override
+    public String toString() {
+        return "Pez:" + "\n\tNombre: " + this.getNombre() + "\n\tEdad: " + this.getEdad()+ "\n\tPeso: " + this.getPeso()+"kg"
+                + "\n\tSexo: " + this.getSexo();
+    }
 }

@@ -41,4 +41,9 @@ public class Ave extends Animal implements Acciones{
     public void reproducirese() {
         System.out.println("El ave "+ this.getNombre()+" se esta reproducionedo");
     }
+    @Override
+    public String toString() {
+        return "Ave:" + "\n\tNombre: " + this.getNombre() + "\n\tEdad: " + this.getEdad()+ "\n\tPeso: " + this.getPeso()+"kg"
+                + "\n\tSexo: " + this.getSexo();
+    }
 }
